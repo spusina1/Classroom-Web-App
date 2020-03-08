@@ -1,0 +1,264 @@
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.meni {
+	background-color: #CBD6F8;
+	width: 100%;
+	height: 100px;
+	max-width: 750px;
+	margin: 0 auto auto auto;
+	padding: 0px;
+}
+
+.meni ul {
+	margin: 0;
+	width: 100%;
+	padding: 75px 10px 10px 10px;
+}
+
+.meni ul li {
+	margin: auto 0 0 0;
+	padding: 5px;
+	display: inline;
+}
+
+a {
+	color: black;
+}
+
+.trenutnaStranica a {
+	text-decoration: none;
+}
+
+.logo {
+	padding: 0;
+	margin: 0 auto -50px auto;
+	height: 100px;
+	width: 100px;
+	display: flex;
+	justify-content: center;
+}
+
+img {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.sadrzaj {
+	margin: 5px auto auto auto;
+	background-color: #CBD6F8;
+	max-width: 750px;
+	display: flex;
+	justify-content: center;
+}
+
+form {
+	padding: 15px 70px 15px 70px;
+	width: 100%;
+}
+
+.button+button {
+	float: right;
+}
+
+#labelaKraja{
+	margin: 0px 30px 0px 0px;
+}
+
+.button {
+	margin: 5px 25px 25px 25px;
+	display: inline-block;
+	padding: 10px;
+	cursor: pointer;
+	text-align: center;
+	color: #fff;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 15px;
+}
+
+.button:hover {
+	background-color: #3e8e41
+}
+
+.button:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+table,
+th,
+td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	border-color: #25488e;
+	border-width: 3px;
+	width: 100%;
+	height: 100%;
+
+}
+
+table.mala td {
+	height: 40%;
+	overflow: hidden;
+  }
+
+tr:nth-child(odd) {
+	background-color: white;
+	height: 60%;
+}
+
+
+.tabelaDana {
+	background-color: #c99;
+	padding: 0px;
+	display: inline-block;
+}
+
+.praznoPolje {
+	background-color: #85a3e0;
+}
+
+#kalendar {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto;
+	grid-gap: 10px;
+	background-color: #85a3e0;
+  	padding: 15px;
+  	margin: auto;
+	border-style: solid;
+	border-color: #25488e;
+	border-width: 3px;
+	width: 90%;
+}
+
+#prviD{
+    grid-column-start: 5;
+}
+
+
+#kalendar>div {
+	text-align: center;
+	width: 50px;
+	height: 40px;
+}
+
+#box {
+	grid-column-start: 1;
+	grid-column-end: 8;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+
+
+.daniSedmice {
+	background-color: #85a3e0;
+	border-style: solid;
+	border-color: #25488e;
+	border-width: 3px;
+	height: 25px;
+	display: inline-block;
+}
+
+.zauzeta {
+	background-color: #f06d6d;
+}
+
+.slobodna {
+	background-color: #66cc66;
+}
+
+#prethodni{
+	float: left;
+	margin: 20px;
+}
+
+#sljedeci{
+	float: right;
+	margin: 20px;
+}
+
+@media screen and (max-width: 600px) {
+	.meni {
+		height: 160px;
+	}
+	.meni ul {
+		height: 100%;
+		padding: 10px;
+	}
+	.meni ul li {
+		display: block;
+	}
+	#kalendar {
+		display: grid;
+		grid-template-columns: auto auto;
+		width: 200px;
+	}
+	.sakriti~div {
+		display: none;
+	}
+	#box {
+		grid-column-start: 1;
+		grid-row-start: 1;
+	}
+	.box1 {
+		grid-column-start: 1;
+		grid-row-start: 2;
+	}
+	.box2 {
+		grid-column-start: 1;
+		grid-row-start: 3;
+	}
+	.box3 {
+		grid-column-start: 1;
+		grid-row-start: 4;
+	}
+	.box4 {
+		grid-column-start: 1;
+		grid-row-start: 5;
+	}
+	.box5 {
+		grid-column-start: 1;
+		grid-row-start: 6;
+	}
+	.box6 {
+		grid-column-start: 1;
+		grid-row-start: 7;
+	}
+	.box7 {
+		grid-column-start: 1;
+		grid-row-start: 8;
+	}
+	.box8 {
+		grid-column-start: 2;
+		grid-row-start: 6;
+	}
+	.box9 {
+		grid-column-start: 2;
+		grid-row-start: 7;
+	}
+	.box10 {
+		grid-column-start: 2;
+		grid-row-start: 8;
+	}
+	.daniSedmice {
+		height: 40px;
+		width: 100%;
+	}
+	.praznoPolje {
+		display: none;
+	}
+}
+

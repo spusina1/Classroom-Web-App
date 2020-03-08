@@ -1,0 +1,153 @@
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.meni {
+	background-color: #CBD6F8;
+	width: 100%;
+	height: 100px;
+	max-width: 750px;
+	margin: 0 auto auto auto;
+	padding: 0px;
+}
+
+.meni ul {
+	margin: 0;
+	width: 100%;
+	padding: 75px 10px 10px 10px;
+}
+
+.meni ul li {
+	margin: auto 0 0 0;
+	padding: 5px;
+	display: inline;
+}
+
+a {
+	color: black;
+}
+
+.trenutnaStranica a {
+	text-decoration: none;
+}
+
+.logo {
+	padding: 0;
+	margin: 0 auto -50px auto;
+	height: 100px;
+	width: 100px;
+	display: flex;
+	justify-content: center;
+}
+
+img {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.sadrzaj {
+	max-width: 750px;
+	margin: 5px auto auto auto;
+	padding: 5px;
+	background-color: #CBD6F8;
+	justify-content: center;
+}
+
+.sadrzaj::after {
+	display: grid;
+}
+
+.jednaSlika {
+	float: left;
+	width: 33%;
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+}
+
+
+div.jednaSlika img {
+	width: 245px;
+	height: auto;
+}
+
+@media only screen and (max-width: 700px) {
+
+	.jednaSlika {
+		width: 49.99999%;
+		margin: 6px 0;
+	}
+}
+
+.prilagodi:after {
+	content: "";
+	display: grid;
+	clear: both;
+}
+.button+button {
+	float: right;
+}
+
+
+
+.button {
+	margin: 5px 25px 25px 25px;
+	display: inline-block;
+	padding: 10px;
+	cursor: pointer;
+	text-align: center;
+	color: #fff;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 15px;
+}
+
+.button:hover {
+	background-color: #3e8e41
+}
+
+.button:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+#prethodnii{
+	float: left;
+	margin: 20px;
+}
+
+#sljedecii{
+	float: right;
+	margin: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+	.meni {
+		height: 160px;
+	}
+	.meni ul {
+		height: 100%;
+		padding: 10px;
+	}
+	.meni ul li {
+		display: block;
+	}
+	.jednaSlika {
+		width: 100%;
+	}
+	div.jednaSlika img {
+		transform: scale(0.8);
+		justify-content: center;
+	}
+}
+

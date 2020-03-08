@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadatak4</title>
+    <link rel="stylesheet" type="text/css" href="rezervacija.css">
+   
+</head>
+
+<body>
+    <div class="logo">
+        <img src="https://avatars0.githubusercontent.com/u/6596214?s=400&v=4" alt="Etf logo">
+    </div>
+    <div class="meni">
+        <ul>
+            <li><a href="pocetna.html">Početna</a></li>
+            <li><a href="sale.html">Sale</a></li>
+            <li><a href="unos.html">Unos</a></li>
+            <li class="trenutnaStranica"><a href="rezervacija.html">Rezervacija</a></li>
+            <li><a href="osobe.html">Osobe</a></li>
+        </ul>
+    </div>
+
+    <div id="sadrzaj" class="sadrzaj">
+          
+        <form>
+            Sala:
+
+            <select id="listaSala">
+                <option value="0-00">Sala 0-00</option>
+                <option value="0-01">Sala 0-01</option>
+                <option value="0-02">Sala 0-02</option>
+                <option value="0-03">Sala 0-03</option>
+                <option value="0-04">Sala 0-04</option>
+                <option value="0-05">Sala 0-05</option>
+                <option value="0-06">Sala 0-06</option>
+                <option value="0-07">Sala 0-07</option>
+                <option value="0-08">Sala 0-08</option>
+                <option value="0-09">Sala 0-09</option>
+                <option value="1-01">Sala 1-01</option>
+                <option value="1-02">Sala 1-02</option>
+                <option value="1-03">Sala 1-03</option>
+                <option value="1-04">Sala 1-04</option>
+                <option value="1-05">Sala 1-05</option>
+                <option value="1-06">Sala 1-06</option>
+                <option value="1-07">Sala 1-07</option>
+                <option value="1-08">Sala 1-08</option>
+                <option value="1-09">Sala 1-09</option>
+                <option value="1-11">Sala 1-11</option>
+                <option value="1-15">Sala 1-15</option>
+                <option value="VA">VA</option>
+                <option value="MA1">MA1</option>
+                <option value="MA2">MA2</option>
+            </select>
+            Osoba:
+            <select id="listaOsoblja">
+            </select>
+            <br>
+            <input id="myCheck" type="checkbox" name="periodicna" value="periodicna">Periodična rezervacija
+            <br>
+            <br>
+            <label id="labelaPocetka">Početak:</label>
+            <input id="pocetak" type="time" name="pocetak" required>
+            <br>
+            <label id = "labelaKraja"> Kraj:</label>
+            <input id="kraj" type="time" name="kraj" required>
+            <br>
+            <br>
+
+
+            <div id="kalendar">
+
+                <div id="box">Novembar</div>
+                <div class="box1 daniSedmice">PON</div>
+                <div class="box2 daniSedmice">UTO</div>
+                <div class="box3 daniSedmice">SRI</div>
+                <div class="box4 daniSedmice">ČET</div>
+                <div class="box5 daniSedmice">PET</div>
+                <div class="box6 daniSedmice">SUB</div>
+                <div class="box7 daniSedmice">NED</div>
+
+                <div class="box8 tabelaDana" id="prviD">
+                    <table class="mala">
+                        <tr>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="box9 tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="box10 sakriti tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>17</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>26</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>27</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana">
+                    <table class="mala">
+                        <tr>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana" id="29">
+                    <table class="mala">
+                        <tr>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana" id="30">
+                    <table class="mala">
+                        <tr>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td class="slobodna"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div class="tabelaDana" id = "31">
+                        <table class="mala">
+                            <tr>
+                                <td>31</td>
+                            </tr>
+                            <tr>
+                                <td class="slobodna"></td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+            </div>
+            <input class="button" id="prethodni"  type="button" value="Prethodni">
+            
+            <input class="button" id="sljedeci"  type="button" value="Sljedeći">       
+      
+        
+
+        </form>
+
+    </div>
+    <script src="kalendar.js" type="text/javascript"></script>
+    <script src="rezervacije.js" type="text/javascript"></script>
+    <script src="pozivi.js" type="text/javascript"></script>
+   
+</body>
+
+</html>

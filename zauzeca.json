@@ -1,0 +1,82 @@
+{
+    "periodicna": [
+        {
+            "dan": 1,
+            "semestar": "zimski",
+            "pocetak": "14:00",
+            "kraj": "16:00",
+            "naziv": "VA",
+            "predavac": "Neko"
+        },
+        {
+            "dan": 2,
+            "semestar": "ljetni",
+            "pocetak": "14:00",
+            "kraj": "16:00",
+            "naziv": "MA1",
+            "predavac": "Neko"
+        },
+        {
+            "dan": 3,
+            "semestar": "zimski",
+            "pocetak": "15:00",
+            "kraj": "17:00",
+            "naziv": "VA",
+            "predavac": "Neko"
+        },
+        {
+            "dan": 5,
+            "semestar": "zimski",
+            "pocetak": "09:00",
+            "kraj": "21:00",
+            "naziv": "VA",
+            "predavac": "Neko"
+        },
+        {
+            "dan": 3,
+            "semestar": "ljetni",
+            "pocetak": "09:00",
+            "kraj": "21:00",
+            "naziv": "VA",
+            "predavac": "Neko"
+        },
+        {
+            "dan": 0,
+            "semestar": "ljetni",
+            "pocetak": "09:09",
+            "kraj": "21:00",
+            "naziv": "VA",
+            "predavac": "Neko"
+        }
+    ],
+    "vanredna": [
+        {
+            "datum": "05.01.2020",
+            "pocetak": "09:00",
+            "kraj": "12:00",
+            "naziv": "VA",
+            "predavac": "Neko"
+        },
+        {
+            "datum": "07.01.2020",
+            "pocetak": "09:00",
+            "kraj": "12:00",
+            "naziv": "VA",
+            "predavac": "Neko"
+        },
+        {
+            "datum": "2.1.2020",
+            "pocetak": "09:00",
+            "kraj": "21:00",
+            "naziv": "VA",
+            "predavac": "Neko"
+        },
+        {
+            "datum": "4.2.2020",
+            "pocetak": "09:00",
+            "kraj": "21:00",
+            "naziv": "VA",
+            "predavac": "Neko"
+        }
+    ]
+}
